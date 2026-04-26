@@ -1,91 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
 
-    header {
-      padding: 20px;
-      text-align: center;
-      background: #020617;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+}
 
-    h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #020617;
+}
 
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-    }
+nav a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin-left: 20px;
+}
 
-    .hero h2 {
-      font-size: 2rem;
-      color: #38bdf8;
-    }
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px;
-    }
+.hero h1 {
+  font-size: 3rem;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
+.hero span {
+  color: #38bdf8;
+}
 
-    .card:hover {
-      transform: scale(1.05);
-      background: #334155;
-    }
+/* Section */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-    }
-  </style>
+h2 {
+  color: #38bdf8;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: #334155;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Your Name</h1>
-  <p>Web Developer 🚀</p>
-</header>
+<nav>
+  <div><b>Your Name</b></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
 <section class="hero">
-  <h2>Hi, I'm Your Name 👋</h2>
-  <p>I build websites and cool projects.</p>
+  <h1>Hi, I'm <span>Your Name</span> 👋</h1>
+  <p>Aspiring Web Developer building real-world projects</p>
 </section>
 
-<section class="projects">
-  <div class="card">
-    <h3>Project 1</h3>
-    <p>Describe your project here.</p>
-  </div>
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>I am learning web development and building projects using HTML, CSS, and JavaScript.</p>
 
-  <div class="card">
-    <h3>Project 2</h3>
-    <p>Describe your project here.</p>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
   </div>
+</section>
 
-  <div class="card">
-    <h3>Project 3</h3>
-    <p>Describe your project here.</p>
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>This personal portfolio built using HTML and CSS.</p>
+    </div>
+
+    <div class="card">
+      <h3>Weather App</h3>
+      <p>Fetches real-time weather using API.</p>
+    </div>
+
   </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <p>GitHub: github.com/your-username</p>
 </section>
 
 <footer>
